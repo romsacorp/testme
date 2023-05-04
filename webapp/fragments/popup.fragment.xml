@@ -1,0 +1,5 @@
+<core:FragmentDefinition xmlns="sap.m" 
+                         xmlns:f="sap.ui.layout.form" 
+                         xmlns:core="sap.ui.core"> 
+     <SelectDialog id="dialog" confirm="onPopUpConfirm" multiSelect="true"></SelectDialog> <!--este es el popup metido en un fragmento -->
+</core:FragmentDefinition>

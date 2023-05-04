@@ -1,0 +1,12 @@
+specVersion: '2.6'
+metadata:
+  name: myfioriapp2
+type: application
+server:
+  customMiddleware:
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        backend:
+        - path: /sap/opu/odata
+          url: http://vhcalnplci:8000/

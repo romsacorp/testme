@@ -1,0 +1,43 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+          xmlns:f="sap.ui.layout.form"
+          xmlns:core="sap.ui.core"
+     controllerName="emc.fin.ar.controller.View2">
+   <Page title="{i18n>tittleV2}" showNavButton="true" navButtonPress="onBack">
+       <!-- <Button text="Back" press="onBack" ></Button>  con la propiedad shownavbutton se pone el botoncito de back-->
+     <ObjectHeader title="{name}" intro="{type}" number="{price}"
+                   numberUnit="{unit}" icon="{image}">
+        <!--<firstStatus>  -->
+        <statuses>          
+              <ObjectStatus text="{status}" state="{
+                                                      path:'status',
+                                                      formatter:'.formatter.getStatus' 
+                                                    }"/>
+        </statuses>                                            
+                                                   
+       <!--</firstStatus>-->             
+     </ObjectHeader>
+     <IconTabBar >
+          <items>
+          <IconTabFilter text="More info" icon="sap-icon://warning">
+            <!--aqui estabaa el simple form aantes de paasarlo al fragment-->
+            <core:Fragment fragmentName="emc.fin.ar.fragments.info" type="XML"></core:Fragment>
+          </IconTabFilter>
+          <IconTabFilter text="Supplier" icon="sap-icon://supplier">  
+            <core:Fragment fragmentName="emc.fin.ar.fragments.Supplier" type="XML"></core:Fragment>
+          </IconTabFilter>
+          <IconTabFilter text="Cities" icon="sap-icon://home">  
+            <core:Fragment fragmentName="emc.fin.ar.fragments.cities" type="XML"></core:Fragment>
+          </IconTabFilter>
+        </items>
+    </IconTabBar>   
+    <footer>
+        <Toolbar >
+           <ToolbarSpacer ></ToolbarSpacer>
+           <Button press="onApprove" text="Approve" type="Accept"></Button>
+           <Button press="onReject" text="Reject" type="Reject"></Button>
+        </Toolbar>
+    </footer>
+   </Page>
+
+
+</mvc:View>

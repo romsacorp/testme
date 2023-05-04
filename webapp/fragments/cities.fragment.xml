@@ -1,0 +1,24 @@
+<core:FragmentDefinition xmlns="sap.m" 
+                         xmlns:f="sap.ui.layout.form" 
+                         xmlns:core="sap.ui.core"> 
+
+
+                         <VBox> <!--paraa alinear contenido abajo con un br-->
+                            <items>
+                               <HBox >
+                                 <Select items="{/Ciudades}"> <!--drop dow list con limitaaciones usar Combobox-->
+                                   <core:Item key="{name}" text="{name}"></core:Item>
+                                 </Select>      
+                                 <ComboBox items="{/Ciudades}"> <!--drop dow list con limitaaciones usar Combobox-->
+                                   <core:Item key="{name}" text="{name}"></core:Item>
+                                 </ComboBox>
+                               </HBox><!--alineaar-->
+                               <MultiComboBox items="{/Ciudades}" width="60%"> <!--drop dow list con limitaaciones usar Combobox-->
+                                 <core:Item key="{name}" text="{name}"></core:Item>
+                               </MultiComboBox>  
+                            </items>
+                         </VBox>  
+
+
+
+</core:FragmentDefinition>

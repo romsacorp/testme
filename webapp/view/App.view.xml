@@ -1,0 +1,5 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+     controllerName="emc.fin.ar.controller.App">
+     <SplitApp id="appCon"></SplitApp>
+    <!-- <App id="appCon"></App> para ael list control -->
+</mvc:View>

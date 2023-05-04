@@ -1,0 +1,77 @@
+{
+	"Fruits": [{
+			"name": "Manzana",
+			"color": "Roja",
+			"type": "Alcalina",
+			"image": "https://www.sistemadigitaldealimentos.org/images/platos/big/22.png",
+			"price": 210,
+			"unit": "kg",
+			"status": "A"
+		},
+		{
+			"name": "Platano",
+			"color": "Amarillo",
+			"type": "Neutra",
+			"image": "https://smattcom.com/img/img%20platano%20solo@x1.png",
+			"price": 110,
+			"unit": "kg",
+			"status": "B"
+		},
+		{
+			"name": "Sandia",
+			"color": "Verde",
+			"type": "Citrica",
+			"image": "https://sicarfarms.com/wp-content/uploads/2021/01/Sandia-1.png",
+			"price": 610,
+			"unit": "kg",
+			"status": "C"
+		}
+	],
+	"Supplier": [{
+			"name": "SuperAlex",
+			"contactPerson": "Alejandro Romero",
+			"city": "Puebla",
+			"sinceWhen": "12.01.92",
+			"state": "puebla",
+			"phoneNo": "441160",
+			"frutas": ["1", "2", "3"]
+		},
+		{
+			"name": "SuperBK",
+			"contactPerson": "Rebeca Sanchez",
+			"city": "CDMX",
+			"sinceWhen": "12.12.82",
+			"state": "puebla",
+			"phoneNo": "225548",
+			"frutas": ["1", "2", "3"]
+		},
+		{
+			"name": "SuperCaro",
+			"contactPerson": "Carolina Velazquez",
+			"city": "Queretaro",
+			"sinceWhen": "04.04.86",
+			"state": "queretaro",
+			"phoneNo": "22254875",
+			"frutas": ["1", "2", "3"]
+		}
+	],
+	"Ciudades": [{
+			"name": "Puebla",
+			"state": "Puebla",
+			"Population": 10000,
+			"famousFor": "Mole"
+		},
+		{
+			"name": "CDMX",
+			"state": "DF",
+			"Population": 10023,
+			"famousFor": "Molotes"
+		},
+		{
+			"name": "Queretaro",
+			"state": "Quere",
+			"Population": 10322,
+			"famousFor": "crecimiento"
+		}
+	]
+}
